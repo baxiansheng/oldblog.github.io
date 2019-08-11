@@ -6,10 +6,19 @@
     <description>Recent content in Posts on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 11 Aug 2019 18:04:29 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 11 Aug 2019 19:06:11 +0800</lastBuildDate>
     
 	<atom:link href="https://baxiansheng.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Blog2</title>
+      <link>https://baxiansheng.github.io/post/blog2/</link>
+      <pubDate>Sun, 11 Aug 2019 19:06:11 +0800</pubDate>
+      
+      <guid>https://baxiansheng.github.io/post/blog2/</guid>
+      <description>my personal python study note</description>
+    </item>
     
     <item>
       <title>Blog</title>
@@ -17,7 +26,8 @@
       <pubDate>Sun, 11 Aug 2019 18:04:29 +0800</pubDate>
       
       <guid>https://baxiansheng.github.io/post/blog/</guid>
-      <description>hello-world The first GitHub repository of baxiansheng. I am learning to use this fantistic website to improve my coding skills, and I believe that I will try my best to do this.</description>
+      <description>hello-world The first GitHub repository of baxiansheng. I am learning to use this fantistic website to improve my coding skills, and I believe that I will try my best to do this.
+python study note： 1.</description>
     </item>
     
   </channel>
