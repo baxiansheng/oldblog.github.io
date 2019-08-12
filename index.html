@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>My New Hugo Site</title>
+  <title>Welcome to my blog</title>
 
   
   
@@ -20,7 +20,7 @@
 
 
 <link rel="canonical" href="https://baxiansheng.github.io/" />
-<link rel="alternative" href="/index.xml" title="My New Hugo Site" type="application/atom+xml" />
+<link rel="alternative" href="/index.xml" title="Welcome to my blog" type="application/atom+xml" />
 
 <link href="/css/semantic.min.css" rel="stylesheet" />
 <link rel="stylesheet" href="/css/site.css" />
@@ -96,7 +96,7 @@
 <section class="ui bottom attached center aligned inverted segment">
 
     
-    <p>© 2019 My New Hugo Site</p>
+    <p>© 2019 Welcome to my blog</p>
     
     <p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with theme <a href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</p>
 </section>
@@ -119,12 +119,14 @@
           
           <div class="display-content">
           
-            <a href="https://baxiansheng.github.io/post/blog2/">
+            <a href="https://baxiansheng.github.io/post/python/">
               
-              <h2 class="ui header" style="color: white;">Blog2</h2>
+              <h2 class="ui header" style="color: white;">Python</h2>
               
             </a>
-            <p style="padding: 5px;">my personal python study note 1.爬取3D打印网论坛中的帖子 python中字典的用法 python中如何连接mysql数据库</p>
+            <p style="padding: 5px;">my personal python study note  * 1.爬取[3D打印网](“http://bbs.3drrr.com/forum-2-1.html&#34;)论坛中的帖子  通过分析帖子的html页面的标签，使用python中的BeautifulSoup库进行爬取，并将爬取到的数据写入到mysql数据库中。 - 关于数据库的操作代码如下：
+db = pymysql.connect(&#34;localhost&#34;, &#34;root&#34;, &#34;woaini&#34;, &#34;sdprint&#34;, charset=&#39;utf8&#39;) //打开数据库连接 cursor = db.cursor() //使用cursor()方法获取操作游标 sql = &#34;INSERT INTO sdprint(class,title, author,time, content)VALUES (%s,%s,%s, %s, %s);&#34; //构造sql语句 params = (sdprint[&#34;类别&#34;],sdprint[&#34;标题&#34;], sdprint[&#34;作者&#34;],sdprint[&#34;时间&#34;], sdprint[&#34;正文&#34;]) //参数 try: cursor.execute(sql,params) //执行sql语句 db.commit() //提交 print(&#39;success&#39;) except: db.rollback() print(&#39;error&#39;) db.close() //关闭数据库连接   关于BS使用实例代码如下：
+f = open(filename, &#39;r&#39;) //把.html文件打开 html = f.read() f.close() bs = BeautifulSoup(html, &#34;html.parser&#34;) //bs实例化 div = bs.</p>
             <p>@ </p>
           </div>
           
@@ -135,7 +137,7 @@
       </div>
     </div>
     
-    <img src="/img/default5.jpg" alt="Blog2">
+    <img src="/img/default1.jpg" alt="Python">
     
   </div>
 </article>
@@ -170,7 +172,7 @@ python study note： 1.</p>
       </div>
     </div>
     
-    <img src="/img/default3.jpg" alt="Blog">
+    <img src="/img/default1.jpg" alt="Blog">
     
   </div>
 </article>
