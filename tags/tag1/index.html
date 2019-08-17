@@ -5,7 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Welcome to my blog</title>
+  <title>
+
+tag | tag1
+
+</title>
 
   
   
@@ -19,7 +23,7 @@
 <meta name="generator" content="Hugo 0.56.3" />
 
 
-<link rel="canonical" href="https://baxiansheng.github.io/" />
+<link rel="canonical" href="https://baxiansheng.github.io/tags/tag1/" />
 <link rel="alternative" href="/index.xml" title="Welcome to my blog" type="application/atom+xml" />
 
 <link href="/css/semantic.min.css" rel="stylesheet" />
@@ -35,9 +39,12 @@
       <section class="front">
         
 
-<div class="ui top secondary menu" style="overflow-x: auto">
+<nav class="ui top secondary menu" style="overflow-x: auto">
   <div class="item">
     <i class="inverted big link bullseye icon dream-flip-toggle" title="Flip it!"></i>
+  </div>
+  <div class="item">
+    <a href="/"><i class="inverted big link home icon" title="Home"></i></a>
   </div>
   <div class="item">
     
@@ -49,7 +56,7 @@
     <i class="disabled inverted big arrow alternate circle outline right icon" title="Next page"></i>
     
   </div>
-</div>
+</nav>
  
 <div class="ui centered grid">
   <div class="fifteen wide mobile fifteen wide tablet four wide computer column">
@@ -174,78 +181,6 @@
     </div>
     
     <img src="/img/cover.jpg" alt="My Plan in Next Three Years">
-    
-  </div>
-</article>
-
-
-      
-
-        <article class="card" style="box-shadow: none;">
-  <div class="image">
-    
-    <div class="ui dimmer">
-    
-      <div class="content">
-        <div class="center">
-          
-          <div class="display-content">
-          
-            <a href="https://baxiansheng.github.io/post/python/">
-              
-              <h2 class="ui header" style="color: white;">Python</h2>
-              
-            </a>
-            <p style="padding: 5px;">my personal python study note 1.爬取3D打印网论坛中的帖子  通过分析帖子的html页面的标签，使用python中的BeautifulSoup库进行爬取，并将爬取到的数据写入到mysql数据库中。
- 关于数据库的操作代码如下：
-db = pymysql.connect(&#34;localhost&#34;, &#34;root&#34;, &#34;woaini&#34;, &#34;sdprint&#34;, charset=&#39;utf8&#39;) //打开数据库连接 cursor = db.cursor() //使用cursor()方法获取操作游标 sql = &#34;INSERT INTO sdprint(class,title, author,time, content)VALUES (%s,%s,%s, %s, %s);&#34; //构造sql语句 params = (sdprint[&#34;类别&#34;],sdprint[&#34;标题&#34;], sdprint[&#34;作者&#34;],sdprint[&#34;时间&#34;], sdprint[&#34;正文&#34;]) //参数 try: cursor.execute(sql,params) //执行sql语句 db.commit() //提交 print(&#39;success&#39;) except: db.rollback() print(&#39;error&#39;) db.close() //关闭数据库连接      关于BS使用实例代码如下：
-f = open(filename, &#39;r&#39;) //把.html文件打开 html = f.read() f.close() bs = BeautifulSoup(html, &#34;html.parser&#34;) //bs实例化 div = bs.</p>
-            <p>@ </p>
-          </div>
-          
-          <div class="ui top right attached black label">1 min read</div>
-          <div class="ui bottom left attached black label">Aug 11, 2019</div>
-          
-        </div>
-      </div>
-    </div>
-    
-    <img src="/img/default3.jpg" alt="Python">
-    
-  </div>
-</article>
-
-
-      
-
-        <article class="card" style="box-shadow: none;">
-  <div class="image">
-    
-    <div class="ui dimmer">
-    
-      <div class="content">
-        <div class="center">
-          
-          <div class="display-content">
-          
-            <a href="https://baxiansheng.github.io/post/blog/">
-              
-              <h2 class="ui header" style="color: white;">Blog</h2>
-              
-            </a>
-            <p style="padding: 5px;">hello-world The first GitHub repository of baxiansheng. I am learning to use this fantistic website to improve my coding skills, and I believe that I will try my best to do this.
-python study note： 1.</p>
-            <p>@ </p>
-          </div>
-          
-          <div class="ui top right attached black label">1 min read</div>
-          <div class="ui bottom left attached black label">Aug 11, 2019</div>
-          
-        </div>
-      </div>
-    </div>
-    
-    <img src="/img/default1.jpg" alt="Blog">
     
   </div>
 </article>

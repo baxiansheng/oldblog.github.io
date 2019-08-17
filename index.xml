@@ -6,10 +6,20 @@
     <description>Recent content on Welcome to my blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 11 Aug 2019 19:06:11 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 17 Aug 2019 19:52:42 +0800</lastBuildDate>
     
 	<atom:link href="https://baxiansheng.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>My Plan in Next Three Years</title>
+      <link>https://baxiansheng.github.io/post/my-plan-in-next-three-years/</link>
+      <pubDate>Sat, 17 Aug 2019 19:52:42 +0800</pubDate>
+      
+      <guid>https://baxiansheng.github.io/post/my-plan-in-next-three-years/</guid>
+      <description>写在前面 本文用于记录本人于硕士研究生生涯中的点滴，争取做到每天都更新，内容包括学习，生活，以及自己的成长心路历程，给各位以前车之鉴，最重要的是，给，未来的自己。
+2019年8月17日 于OUC 今天正式来到了学校，之前来过几次，不过都是当天就回家了，开始了今后的学习生活。今天天气不错，阳光明媚，是个出行的好日子。妈妈和弟弟一起送我来到学校，帮忙收拾了宿舍，我顺便带他们参观了实验室，我今后学习的地方！ 晚上继续学习了Java的基础知识，今天学的是JVM的运行原理，包括内存分配，垃圾回收GC，类文件和类加载器等知识。学习的过程中想着要把数据库原理这本书再复习一下，当时本科学习的时候由于时间关系没有学完，打算着重复习一下 sql语句格式和规范和后边的触发器等知识。现在是北京时间20:06，打算写完这点东西就会宿舍，毕竟今天是大家来到学校的第一天，回宿舍和舍友同学聊聊天，增进一下感情。</description>
+    </item>
     
     <item>
       <title>Python</title>
@@ -17,8 +27,9 @@
       <pubDate>Sun, 11 Aug 2019 19:06:11 +0800</pubDate>
       
       <guid>https://baxiansheng.github.io/post/python/</guid>
-      <description>my personal python study note  * 1.爬取[3D打印网](&amp;ldquo;http://bbs.3drrr.com/forum-2-1.html&amp;quot;)论坛中的帖子  通过分析帖子的html页面的标签，使用python中的BeautifulSoup库进行爬取，并将爬取到的数据写入到mysql数据库中。 - 关于数据库的操作代码如下：
-db = pymysql.connect(&amp;quot;localhost&amp;quot;, &amp;quot;root&amp;quot;, &amp;quot;woaini&amp;quot;, &amp;quot;sdprint&amp;quot;, charset=&#39;utf8&#39;) //打开数据库连接 cursor = db.cursor() //使用cursor()方法获取操作游标 sql = &amp;quot;INSERT INTO sdprint(class,title, author,time, content)VALUES (%s,%s,%s, %s, %s);&amp;quot; //构造sql语句 params = (sdprint[&amp;quot;类别&amp;quot;],sdprint[&amp;quot;标题&amp;quot;], sdprint[&amp;quot;作者&amp;quot;],sdprint[&amp;quot;时间&amp;quot;], sdprint[&amp;quot;正文&amp;quot;]) //参数 try: cursor.execute(sql,params) //执行sql语句 db.commit() //提交 print(&#39;success&#39;) except: db.rollback() print(&#39;error&#39;) db.close() //关闭数据库连接   关于BS使用实例代码如下：
+      <description>my personal python study note 1.爬取3D打印网论坛中的帖子  通过分析帖子的html页面的标签，使用python中的BeautifulSoup库进行爬取，并将爬取到的数据写入到mysql数据库中。
+ 关于数据库的操作代码如下：
+db = pymysql.connect(&amp;quot;localhost&amp;quot;, &amp;quot;root&amp;quot;, &amp;quot;woaini&amp;quot;, &amp;quot;sdprint&amp;quot;, charset=&#39;utf8&#39;) //打开数据库连接 cursor = db.cursor() //使用cursor()方法获取操作游标 sql = &amp;quot;INSERT INTO sdprint(class,title, author,time, content)VALUES (%s,%s,%s, %s, %s);&amp;quot; //构造sql语句 params = (sdprint[&amp;quot;类别&amp;quot;],sdprint[&amp;quot;标题&amp;quot;], sdprint[&amp;quot;作者&amp;quot;],sdprint[&amp;quot;时间&amp;quot;], sdprint[&amp;quot;正文&amp;quot;]) //参数 try: cursor.execute(sql,params) //执行sql语句 db.commit() //提交 print(&#39;success&#39;) except: db.rollback() print(&#39;error&#39;) db.close() //关闭数据库连接      关于BS使用实例代码如下：
 f = open(filename, &#39;r&#39;) //把.html文件打开 html = f.read() f.close() bs = BeautifulSoup(html, &amp;quot;html.parser&amp;quot;) //bs实例化 div = bs.</description>
     </item>
     

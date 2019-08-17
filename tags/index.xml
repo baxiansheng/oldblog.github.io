@@ -6,9 +6,28 @@
     <description>Recent content in Tags on Welcome to my blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Sat, 17 Aug 2019 19:52:42 +0800</lastBuildDate>
     
 	<atom:link href="https://baxiansheng.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>tag1</title>
+      <link>https://baxiansheng.github.io/tags/tag1/</link>
+      <pubDate>Sat, 17 Aug 2019 19:52:42 +0800</pubDate>
+      
+      <guid>https://baxiansheng.github.io/tags/tag1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tag2</title>
+      <link>https://baxiansheng.github.io/tags/tag2/</link>
+      <pubDate>Sat, 17 Aug 2019 19:52:42 +0800</pubDate>
+      
+      <guid>https://baxiansheng.github.io/tags/tag2/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

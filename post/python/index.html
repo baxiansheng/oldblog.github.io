@@ -12,8 +12,9 @@ Python
   
   
   <meta name="author" content="" />
-  <meta name="description" content="my personal python study note  * 1.爬取[3D打印网](&amp;ldquo;http://bbs.3drrr.com/forum-2-1.html&amp;quot;)论坛中的帖子  通过分析帖子的html页面的标签，使用python中的BeautifulSoup库进行爬取，并将爬取到的数据写入到mysql数据库中。 - 关于数据库的操作代码如下：
-db = pymysql.connect(&amp;quot;localhost&amp;quot;, &amp;quot;root&amp;quot;, &amp;quot;woaini&amp;quot;, &amp;quot;sdprint&amp;quot;, charset=&#39;utf8&#39;) //打开数据库连接 cursor = db.cursor() //使用cursor()方法获取操作游标 sql = &amp;quot;INSERT INTO sdprint(class,title, author,time, content)VALUES (%s,%s,%s, %s, %s);&amp;quot; //构造sql语句 params = (sdprint[&amp;quot;类别&amp;quot;],sdprint[&amp;quot;标题&amp;quot;], sdprint[&amp;quot;作者&amp;quot;],sdprint[&amp;quot;时间&amp;quot;], sdprint[&amp;quot;正文&amp;quot;]) //参数 try: cursor.execute(sql,params) //执行sql语句 db.commit() //提交 print(&#39;success&#39;) except: db.rollback() print(&#39;error&#39;) db.close() //关闭数据库连接   关于BS使用实例代码如下：
+  <meta name="description" content="my personal python study note 1.爬取3D打印网论坛中的帖子  通过分析帖子的html页面的标签，使用python中的BeautifulSoup库进行爬取，并将爬取到的数据写入到mysql数据库中。
+ 关于数据库的操作代码如下：
+db = pymysql.connect(&amp;quot;localhost&amp;quot;, &amp;quot;root&amp;quot;, &amp;quot;woaini&amp;quot;, &amp;quot;sdprint&amp;quot;, charset=&#39;utf8&#39;) //打开数据库连接 cursor = db.cursor() //使用cursor()方法获取操作游标 sql = &amp;quot;INSERT INTO sdprint(class,title, author,time, content)VALUES (%s,%s,%s, %s, %s);&amp;quot; //构造sql语句 params = (sdprint[&amp;quot;类别&amp;quot;],sdprint[&amp;quot;标题&amp;quot;], sdprint[&amp;quot;作者&amp;quot;],sdprint[&amp;quot;时间&amp;quot;], sdprint[&amp;quot;正文&amp;quot;]) //参数 try: cursor.execute(sql,params) //执行sql语句 db.commit() //提交 print(&#39;success&#39;) except: db.rollback() print(&#39;error&#39;) db.close() //关闭数据库连接      关于BS使用实例代码如下：
 f = open(filename, &#39;r&#39;) //把.html文件打开 html = f.read() f.close() bs = BeautifulSoup(html, &amp;quot;html.parser&amp;quot;) //bs实例化 div = bs." />
 
 
@@ -66,29 +67,33 @@ f = open(filename, &#39;r&#39;) //把.html文件打开 html = f.read() f.close()
 
 <h2 id="my-personal-python-study-note">my personal python study note</h2>
 
-<blockquote>
-<h3 id="1-爬取-3d打印网-http-bbs-3drrr-com-forum-2-1-html-论坛中的帖子">* 1.爬取[3D打印网](&ldquo;<a href="http://bbs.3drrr.com/forum-2-1.html&quot;)论坛中的帖子">http://bbs.3drrr.com/forum-2-1.html&quot;)论坛中的帖子</a></h3>
+<h3 id="1-爬取-3d打印网-http-bbs-3drrr-com-forum-2-1-html-论坛中的帖子">1.爬取<a href="http://bbs.3drrr.com/forum-2-1.html">3D打印网</a>论坛中的帖子</h3>
 
 <blockquote>
-<p>通过分析帖子的html页面的标签，使用python中的BeautifulSoup库进行爬取，并将爬取到的数据写入到mysql数据库中。
-- 关于数据库的操作代码如下：</p>
+<p>通过分析帖子的html页面的标签，使用python中的BeautifulSoup库进行爬取，并将爬取到的数据写入到mysql数据库中。</p>
+
+<ul>
+<li><p>关于数据库的操作代码如下：</p>
 
 <pre><code>db = pymysql.connect(&quot;localhost&quot;, &quot;root&quot;, &quot;woaini&quot;, &quot;sdprint&quot;, charset='utf8') //打开数据库连接
 cursor = db.cursor() //使用cursor()方法获取操作游标
 sql = &quot;INSERT INTO sdprint(class,title, author,time, content)VALUES (%s,%s,%s, %s, %s);&quot; //构造sql语句
 params = (sdprint[&quot;类别&quot;],sdprint[&quot;标题&quot;], sdprint[&quot;作者&quot;],sdprint[&quot;时间&quot;], sdprint[&quot;正文&quot;]) //参数
 try:
-    cursor.execute(sql,params) //执行sql语句
-    db.commit() //提交
-    print('success')
+cursor.execute(sql,params) //执行sql语句
+db.commit() //提交
+print('success')
 except:
-    db.rollback()
-    print('error')
+db.rollback()
+print('error')
 db.close() //关闭数据库连接
-</code></pre>
+</code></pre></li>
+</ul>
+</blockquote>
 
 <hr />
 
+<blockquote>
 <ul>
 <li><p>关于BS使用实例代码如下：</p>
 
@@ -97,10 +102,14 @@ html = f.read()
 f.close()
 bs = BeautifulSoup(html, &quot;html.parser&quot;) //bs实例化
 div = bs.find(&quot;div&quot;,{&quot;class&quot;:&quot;middle&quot;}) //找到类别为middle的div，存储在div变量中
-</code></pre>
+</code></pre></li>
+</ul>
+</blockquote>
 
-<hr /></li>
+<hr />
 
+<blockquote>
+<ul>
 <li><p>python字典类型知识，直接上代码</p>
 
 <pre><code>content = {} //定义一个名为content的字典
@@ -111,12 +120,11 @@ print(content) // 打印一下字典
 </code></pre>
 
 <p>结果如下
-{&lsquo;姓名&rsquo;: &lsquo;李四&rsquo;, &lsquo;年龄&rsquo;: &lsquo;25&rsquo;, &lsquo;部门&rsquo;: &lsquo;保卫部&rsquo;}</p>
-
-<h3 id="2">* 2.</h3></li>
+{&lsquo;姓名&rsquo;: &lsquo;李四&rsquo;, &lsquo;年龄&rsquo;: &lsquo;25&rsquo;, &lsquo;部门&rsquo;: &lsquo;保卫部&rsquo;}</p></li>
 </ul>
 </blockquote>
-</blockquote>
+
+<h3 id="2">2.</h3>
 </article>
     </section>
 
@@ -169,6 +177,43 @@ print(content) // 打印一下字典
 
 
 
+<section class="ui attached center aligned inverted segment dream-header-tags dream-tags">
+
+  
+  <a class="ui label" href="/tags/tag1" title="tag1">tag1</a>
+  
+  <a class="ui label" href="/tags/tag2" title="tag2">tag2</a>
+  
+</section>
+
+
+
+
+<section class="ui attached inverted segment dream-categories">
+
+  
+  <div class="ui inverted accordion">
+  
+    
+    <div class="title">
+      <i class="dropdown icon"></i>
+      <a href="/categories/category1" class="item">category1</a>
+    </div>
+    <div class="content">
+      <div class="ui link list">
+      
+      <div class="item" style="padding-left: 24px;">
+        <i class="gem outline grey icon"></i>
+        <div class="content">
+          <a href="https://baxiansheng.github.io/post/my-plan-in-next-three-years/" class="item">My Plan in Next Three Years</a>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+    
+  </div>
+</section>
 
 
 
