@@ -14,8 +14,8 @@ Python
   <meta name="author" content="" />
   <meta name="description" content="my personal python study note 1.爬取3D打印网论坛中的帖子  通过分析帖子的html页面的标签，使用python中的BeautifulSoup库进行爬取，并将爬取到的数据写入到mysql数据库中。
  关于数据库的操作代码如下：
-db = pymysql.connect(&amp;quot;localhost&amp;quot;, &amp;quot;root&amp;quot;, &amp;quot;woaini&amp;quot;, &amp;quot;sdprint&amp;quot;, charset=&#39;utf8&#39;) //打开数据库连接 cursor = db.cursor() //使用cursor()方法获取操作游标 sql = &amp;quot;INSERT INTO sdprint(class,title, author,time, content)VALUES (%s,%s,%s, %s, %s);&amp;quot; //构造sql语句 params = (sdprint[&amp;quot;类别&amp;quot;],sdprint[&amp;quot;标题&amp;quot;], sdprint[&amp;quot;作者&amp;quot;],sdprint[&amp;quot;时间&amp;quot;], sdprint[&amp;quot;正文&amp;quot;]) //参数 try: cursor.execute(sql,params) //执行sql语句 db.commit() //提交 print(&#39;success&#39;) except: db.rollback() print(&#39;error&#39;) db.close() //关闭数据库连接      关于BS使用实例代码如下：
-f = open(filename, &#39;r&#39;) //把.html文件打开 html = f.read() f.close() bs = BeautifulSoup(html, &amp;quot;html.parser&amp;quot;) //bs实例化 div = bs." />
+db = pymysql.connect(&amp;quot;localhost&amp;quot;, &amp;quot;root&amp;quot;, &amp;quot;woaini&amp;quot;, &amp;quot;sdprint&amp;quot;, charset=&#39;utf8&#39;) //打开数据库连接 cursor = db.cursor() //使用cursor()方法获取操作游标 sql = &amp;quot;INSERT INTO sdprint(class,title, author,time, content)VALUES (%s,%s,%s, %s, %s);&amp;quot; //构造sql语句 params = (sdprint[&amp;quot;类别&amp;quot;],sdprint[&amp;quot;标题&amp;quot;], sdprint[&amp;quot;作者&amp;quot;],sdprint[&amp;quot;时间&amp;quot;], sdprint[&amp;quot;正文&amp;quot;]) //参数 try: cursor.execute(sql,params) //执行sql语句 db.commit() //提交 print(&#39;success&#39;) except: db.rollback() print(&#39;error&#39;) db.close() //关闭数据库连接  关于BS使用实例代码如下：
+f = open(filename, &#39;r&#39;) //把.html文件打开 html = f.read() f.close() bs = BeautifulSoup(html, &amp;quot;html.parser&amp;quot;) //bs实例化 div = bs.find(&amp;quot;div&amp;quot;,{&amp;quot;class&amp;quot;:&amp;quot;middle&amp;quot;}) //找到类别为middle的div，存储在div变量中  python字典类型知识，直接上代码" />
 
 
 
@@ -88,13 +88,7 @@ db.rollback()
 print('error')
 db.close() //关闭数据库连接
 </code></pre></li>
-</ul>
-</blockquote>
 
-<hr />
-
-<blockquote>
-<ul>
 <li><p>关于BS使用实例代码如下：</p>
 
 <pre><code>f = open(filename, 'r') //把.html文件打开
@@ -103,13 +97,7 @@ f.close()
 bs = BeautifulSoup(html, &quot;html.parser&quot;) //bs实例化
 div = bs.find(&quot;div&quot;,{&quot;class&quot;:&quot;middle&quot;}) //找到类别为middle的div，存储在div变量中
 </code></pre></li>
-</ul>
-</blockquote>
 
-<hr />
-
-<blockquote>
-<ul>
 <li><p>python字典类型知识，直接上代码</p>
 
 <pre><code>content = {} //定义一个名为content的字典
@@ -205,7 +193,7 @@ print(content) // 打印一下字典
       <div class="item" style="padding-left: 24px;">
         <i class="gem outline grey icon"></i>
         <div class="content">
-          <a href="https://baxiansheng.github.io/post/my-plan-in-next-three-years/" class="item">My Plan in Next Three Years</a>
+          <a href="https://baxiansheng.github.io/post/my-dailylife-in-next-three-years/" class="item">My Plan in Next Three Years</a>
         </div>
       </div>
       

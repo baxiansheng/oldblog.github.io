@@ -118,7 +118,7 @@
       <div class="item" style="padding-left: 24px;">
         <i class="gem outline grey icon"></i>
         <div class="content">
-          <a href="https://baxiansheng.github.io/post/my-plan-in-next-three-years/" class="item">My Plan in Next Three Years</a>
+          <a href="https://baxiansheng.github.io/post/my-dailylife-in-next-three-years/" class="item">My Plan in Next Three Years</a>
         </div>
       </div>
       
@@ -156,13 +156,15 @@
           
           <div class="display-content">
           
-            <a href="https://baxiansheng.github.io/post/my-plan-in-next-three-years/">
+            <a href="https://baxiansheng.github.io/post/my-dailylife-in-next-three-years/">
               
               <h2 class="ui header" style="color: white;">My Plan in Next Three Years</h2>
               
             </a>
             <p style="padding: 5px;">写在前面 本文用于记录本人于硕士研究生生涯中的点滴，争取做到每天都更新，内容包括学习，生活，以及自己的成长心路历程，给各位以前车之鉴，最重要的是，给，未来的自己。
-2019年8月17日 于OUC 今天正式来到了学校，之前来过几次，不过都是当天就回家了，开始了今后的学习生活。今天天气不错，阳光明媚，是个出行的好日子。妈妈和弟弟一起送我来到学校，帮忙收拾了宿舍，我顺便带他们参观了实验室，我今后学习的地方！ 晚上继续学习了Java的基础知识，今天学的是JVM的运行原理，包括内存分配，垃圾回收GC，类文件和类加载器等知识。学习的过程中想着要把数据库原理这本书再复习一下，当时本科学习的时候由于时间关系没有学完，打算着重复习一下 sql语句格式和规范和后边的触发器等知识。现在是北京时间20:06，打算写完这点东西就会宿舍，毕竟今天是大家来到学校的第一天，回宿舍和舍友同学聊聊天，增进一下感情。</p>
+2019年8月17日 于OUC 今天正式来到了学校，之前来过几次，不过都是当天就回家了，开始了今后的学习生活。今天天气不错，阳光明媚，是个出行的好日子。妈妈和弟弟一起送我来到学校，帮忙收拾了宿舍，我顺便带他们参观了实验室，我今后学习的地方！ 晚上继续学习了Java的基础知识，今天学的是JVM的运行原理，包括内存分配，垃圾回收GC，类文件和类加载器等知识。学习的过程中想着要把数据库原理这本书再复习一下，当时本科学习的时候由于时间关系没有学完，打算着重复习一下 sql语句格式和规范和后边的触发器等知识。现在是北京时间20:06，打算写完这点东西就会宿舍，毕竟今天是大家来到学校的第一天，回宿舍和舍友同学聊聊天，增进一下感情。
+2019年8月18日 于OUC 今天是正式报到的日子，一大早报完到就来到实验室准备学习。上午看了看数据库触发器，下午学习了JVM基础知识，晚上把触发器实现了一下，这里放一下触发器的测试的sql语句
+use test; create table student (Sno char(9) primary KEY); INSERT INTO student values(&#39;201901001&#39;); alter table student add State int; drop trigger if exists Student_State; //创建触发器 DELIMITER ;; create trigger Student_State before insert on student for each row begin set NEW.State = 1 ; end ;; DELIMITER ; INSERT INTO student values(&#39;201901003&#39;,null); update student set State = 0 where Sno = &#39;201901001&#39;; insert into student values(&#39;201901004&#39;,null),(&#39;201901005&#39;,null); //测试对于for each row 是否能一次性对插入的多条数据使触发器起作用  白天的时候和同学聊了一下，以后的学习应该使用Spring框架比较多一些，所以今后的重心放在Spring的学习上，目前初步打算找几个实战项目跟着做一下，先加深一下理解，再慢慢的自己做几个项目。 不过近期应该还是会先把GitHub上的东西看完，尽快吧，赶紧看完，赶紧开始Spring的学习。趁着现在时间还算充裕！ 未来的路还很长，要学的东西还很多，加油。</p>
             <p>@ Author Name</p>
           </div>
           
@@ -198,8 +200,8 @@
             </a>
             <p style="padding: 5px;">my personal python study note 1.爬取3D打印网论坛中的帖子  通过分析帖子的html页面的标签，使用python中的BeautifulSoup库进行爬取，并将爬取到的数据写入到mysql数据库中。
  关于数据库的操作代码如下：
-db = pymysql.connect(&#34;localhost&#34;, &#34;root&#34;, &#34;woaini&#34;, &#34;sdprint&#34;, charset=&#39;utf8&#39;) //打开数据库连接 cursor = db.cursor() //使用cursor()方法获取操作游标 sql = &#34;INSERT INTO sdprint(class,title, author,time, content)VALUES (%s,%s,%s, %s, %s);&#34; //构造sql语句 params = (sdprint[&#34;类别&#34;],sdprint[&#34;标题&#34;], sdprint[&#34;作者&#34;],sdprint[&#34;时间&#34;], sdprint[&#34;正文&#34;]) //参数 try: cursor.execute(sql,params) //执行sql语句 db.commit() //提交 print(&#39;success&#39;) except: db.rollback() print(&#39;error&#39;) db.close() //关闭数据库连接      关于BS使用实例代码如下：
-f = open(filename, &#39;r&#39;) //把.html文件打开 html = f.read() f.close() bs = BeautifulSoup(html, &#34;html.parser&#34;) //bs实例化 div = bs.</p>
+db = pymysql.connect(&#34;localhost&#34;, &#34;root&#34;, &#34;woaini&#34;, &#34;sdprint&#34;, charset=&#39;utf8&#39;) //打开数据库连接 cursor = db.cursor() //使用cursor()方法获取操作游标 sql = &#34;INSERT INTO sdprint(class,title, author,time, content)VALUES (%s,%s,%s, %s, %s);&#34; //构造sql语句 params = (sdprint[&#34;类别&#34;],sdprint[&#34;标题&#34;], sdprint[&#34;作者&#34;],sdprint[&#34;时间&#34;], sdprint[&#34;正文&#34;]) //参数 try: cursor.execute(sql,params) //执行sql语句 db.commit() //提交 print(&#39;success&#39;) except: db.rollback() print(&#39;error&#39;) db.close() //关闭数据库连接  关于BS使用实例代码如下：
+f = open(filename, &#39;r&#39;) //把.html文件打开 html = f.read() f.close() bs = BeautifulSoup(html, &#34;html.parser&#34;) //bs实例化 div = bs.find(&#34;div&#34;,{&#34;class&#34;:&#34;middle&#34;}) //找到类别为middle的div，存储在div变量中  python字典类型知识，直接上代码</p>
             <p>@ </p>
           </div>
           
@@ -210,7 +212,7 @@ f = open(filename, &#39;r&#39;) //把.html文件打开 html = f.read() f.close()
       </div>
     </div>
     
-    <img src="/img/default3.jpg" alt="Python">
+    <img src="/img/default4.jpg" alt="Python">
     
   </div>
 </article>
@@ -245,7 +247,7 @@ python study note： 1.</p>
       </div>
     </div>
     
-    <img src="/img/default1.jpg" alt="Blog">
+    <img src="/img/default3.jpg" alt="Blog">
     
   </div>
 </article>

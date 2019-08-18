@@ -13,12 +13,14 @@
     
     <item>
       <title>My Plan in Next Three Years</title>
-      <link>https://baxiansheng.github.io/post/my-plan-in-next-three-years/</link>
+      <link>https://baxiansheng.github.io/post/my-dailylife-in-next-three-years/</link>
       <pubDate>Sat, 17 Aug 2019 19:52:42 +0800</pubDate>
       
-      <guid>https://baxiansheng.github.io/post/my-plan-in-next-three-years/</guid>
+      <guid>https://baxiansheng.github.io/post/my-dailylife-in-next-three-years/</guid>
       <description>写在前面 本文用于记录本人于硕士研究生生涯中的点滴，争取做到每天都更新，内容包括学习，生活，以及自己的成长心路历程，给各位以前车之鉴，最重要的是，给，未来的自己。
-2019年8月17日 于OUC 今天正式来到了学校，之前来过几次，不过都是当天就回家了，开始了今后的学习生活。今天天气不错，阳光明媚，是个出行的好日子。妈妈和弟弟一起送我来到学校，帮忙收拾了宿舍，我顺便带他们参观了实验室，我今后学习的地方！ 晚上继续学习了Java的基础知识，今天学的是JVM的运行原理，包括内存分配，垃圾回收GC，类文件和类加载器等知识。学习的过程中想着要把数据库原理这本书再复习一下，当时本科学习的时候由于时间关系没有学完，打算着重复习一下 sql语句格式和规范和后边的触发器等知识。现在是北京时间20:06，打算写完这点东西就会宿舍，毕竟今天是大家来到学校的第一天，回宿舍和舍友同学聊聊天，增进一下感情。</description>
+2019年8月17日 于OUC 今天正式来到了学校，之前来过几次，不过都是当天就回家了，开始了今后的学习生活。今天天气不错，阳光明媚，是个出行的好日子。妈妈和弟弟一起送我来到学校，帮忙收拾了宿舍，我顺便带他们参观了实验室，我今后学习的地方！ 晚上继续学习了Java的基础知识，今天学的是JVM的运行原理，包括内存分配，垃圾回收GC，类文件和类加载器等知识。学习的过程中想着要把数据库原理这本书再复习一下，当时本科学习的时候由于时间关系没有学完，打算着重复习一下 sql语句格式和规范和后边的触发器等知识。现在是北京时间20:06，打算写完这点东西就会宿舍，毕竟今天是大家来到学校的第一天，回宿舍和舍友同学聊聊天，增进一下感情。
+2019年8月18日 于OUC 今天是正式报到的日子，一大早报完到就来到实验室准备学习。上午看了看数据库触发器，下午学习了JVM基础知识，晚上把触发器实现了一下，这里放一下触发器的测试的sql语句
+use test; create table student (Sno char(9) primary KEY); INSERT INTO student values(&#39;201901001&#39;); alter table student add State int; drop trigger if exists Student_State; //创建触发器 DELIMITER ;; create trigger Student_State before insert on student for each row begin set NEW.State = 1 ; end ;; DELIMITER ; INSERT INTO student values(&#39;201901003&#39;,null); update student set State = 0 where Sno = &#39;201901001&#39;; insert into student values(&#39;201901004&#39;,null),(&#39;201901005&#39;,null); //测试对于for each row 是否能一次性对插入的多条数据使触发器起作用  白天的时候和同学聊了一下，以后的学习应该使用Spring框架比较多一些，所以今后的重心放在Spring的学习上，目前初步打算找几个实战项目跟着做一下，先加深一下理解，再慢慢的自己做几个项目。 不过近期应该还是会先把GitHub上的东西看完，尽快吧，赶紧看完，赶紧开始Spring的学习。趁着现在时间还算充裕！ 未来的路还很长，要学的东西还很多，加油。</description>
     </item>
     
   </channel>
