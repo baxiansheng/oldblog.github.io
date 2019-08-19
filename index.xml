@@ -45,5 +45,24 @@ f = open(filename, &#39;r&#39;) //把.html文件打开 html = f.read() f.close()
 python study note： 1.</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://baxiansheng.github.io/post/blog2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://baxiansheng.github.io/post/blog2/</guid>
+      <description>本项目内容为 《Spring Boot实战合集》系列文章，代码已开源，并持续保持更新。如您觉得该项目对您有用，欢迎点击右上方的 Star 按钮，给予支持！！  个人博客：https://www.codesheep.cn GitHub：https://github.com/hansonwang99  另外所有内容都在我的个人微信公众号 CodeSheep 最先推出，大家可以关注一下，可 长按 或 扫描 下面的 小心心 来获取更多 务实、能看懂、可复现的 原创文。除此之外 提问/进群交流 也可以扫码进行！！！
+  
+数据库/缓存相关  Guava Cache本地缓存在 Spring Boot应用中的实践
+ EVCache缓存在 Spring Boot中的实战
+ Spring Boot应用缓存实践之：Ehcache加持
+ Spring Boot集成 MyBatis和 SQL Server实践
+ Elasticsearch搜索引擎在Spring Boot中的实践
+ 自制一个 elasticsearch-spring-boot-starter
+ Spring Boot项目利用MyBatis Generator进行数据层代码自动生成
+ Mybatis-Plus 真好用（乡村爱情加持）
+  日志相关  Spring Boot日志框架实践  应用监控相关  利用神器 BTrace 追踪线上 Spring Boot应用运行时信息</description>
+    </item>
+    
   </channel>
 </rss>

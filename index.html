@@ -202,7 +202,7 @@ use test; create table student (Sno char(9) primary KEY); INSERT INTO student va
  关于数据库的操作代码如下：
 db = pymysql.connect(&#34;localhost&#34;, &#34;root&#34;, &#34;woaini&#34;, &#34;sdprint&#34;, charset=&#39;utf8&#39;) //打开数据库连接 cursor = db.cursor() //使用cursor()方法获取操作游标 sql = &#34;INSERT INTO sdprint(class,title, author,time, content)VALUES (%s,%s,%s, %s, %s);&#34; //构造sql语句 params = (sdprint[&#34;类别&#34;],sdprint[&#34;标题&#34;], sdprint[&#34;作者&#34;],sdprint[&#34;时间&#34;], sdprint[&#34;正文&#34;]) //参数 try: cursor.execute(sql,params) //执行sql语句 db.commit() //提交 print(&#39;success&#39;) except: db.rollback() print(&#39;error&#39;) db.close() //关闭数据库连接  关于BS使用实例代码如下：
 f = open(filename, &#39;r&#39;) //把.html文件打开 html = f.read() f.close() bs = BeautifulSoup(html, &#34;html.parser&#34;) //bs实例化 div = bs.find(&#34;div&#34;,{&#34;class&#34;:&#34;middle&#34;}) //找到类别为middle的div，存储在div变量中  python字典类型知识，直接上代码</p>
-            <p>@ </p>
+            <p>@ baxiansheng</p>
           </div>
           
           <div class="ui top right attached black label">1 min read</div>
@@ -247,7 +247,51 @@ python study note： 1.</p>
       </div>
     </div>
     
-    <img src="/img/default6.jpg" alt="Blog">
+    <img src="/img/default3.jpg" alt="Blog">
+    
+  </div>
+</article>
+
+
+      
+
+        <article class="card" style="box-shadow: none;">
+  <div class="image">
+    
+    <div class="ui dimmer">
+    
+      <div class="content">
+        <div class="center">
+          
+          <div class="display-content">
+          
+            <a href="https://baxiansheng.github.io/post/blog2/">
+              
+              <h2 class="ui header" style="color: white;"></h2>
+              
+            </a>
+            <p style="padding: 5px;">本项目内容为 《Spring Boot实战合集》系列文章，代码已开源，并持续保持更新。如您觉得该项目对您有用，欢迎点击右上方的 Star 按钮，给予支持！！  个人博客：https://www.codesheep.cn GitHub：https://github.com/hansonwang99  另外所有内容都在我的个人微信公众号 CodeSheep 最先推出，大家可以关注一下，可 长按 或 扫描 下面的 小心心 来获取更多 务实、能看懂、可复现的 原创文。除此之外 提问/进群交流 也可以扫码进行！！！
+  
+数据库/缓存相关  Guava Cache本地缓存在 Spring Boot应用中的实践
+ EVCache缓存在 Spring Boot中的实战
+ Spring Boot应用缓存实践之：Ehcache加持
+ Spring Boot集成 MyBatis和 SQL Server实践
+ Elasticsearch搜索引擎在Spring Boot中的实践
+ 自制一个 elasticsearch-spring-boot-starter
+ Spring Boot项目利用MyBatis Generator进行数据层代码自动生成
+ Mybatis-Plus 真好用（乡村爱情加持）
+  日志相关  Spring Boot日志框架实践  应用监控相关  利用神器 BTrace 追踪线上 Spring Boot应用运行时信息</p>
+            <p>@ </p>
+          </div>
+          
+          <div class="ui top right attached black label">1 min read</div>
+          <div class="ui bottom left attached black label">Jan 1, 0001</div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <img src="/img/default6.jpg" alt="">
     
   </div>
 </article>

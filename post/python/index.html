@@ -11,7 +11,7 @@ Python
 
   
   
-  <meta name="author" content="" />
+  <meta name="author" content="baxiansheng" />
   <meta name="description" content="my personal python study note 1.爬取3D打印网论坛中的帖子  通过分析帖子的html页面的标签，使用python中的BeautifulSoup库进行爬取，并将爬取到的数据写入到mysql数据库中。
  关于数据库的操作代码如下：
 db = pymysql.connect(&amp;quot;localhost&amp;quot;, &amp;quot;root&amp;quot;, &amp;quot;woaini&amp;quot;, &amp;quot;sdprint&amp;quot;, charset=&#39;utf8&#39;) //打开数据库连接 cursor = db.cursor() //使用cursor()方法获取操作游标 sql = &amp;quot;INSERT INTO sdprint(class,title, author,time, content)VALUES (%s,%s,%s, %s, %s);&amp;quot; //构造sql语句 params = (sdprint[&amp;quot;类别&amp;quot;],sdprint[&amp;quot;标题&amp;quot;], sdprint[&amp;quot;作者&amp;quot;],sdprint[&amp;quot;时间&amp;quot;], sdprint[&amp;quot;正文&amp;quot;]) //参数 try: cursor.execute(sql,params) //执行sql语句 db.commit() //提交 print(&#39;success&#39;) except: db.rollback() print(&#39;error&#39;) db.close() //关闭数据库连接  关于BS使用实例代码如下：
@@ -60,7 +60,7 @@ f = open(filename, &#39;r&#39;) //把.html文件打开 html = f.read() f.close()
       <header>
         <h1 class="ui header">
           Python
-          <div class="sub header">@  · Aug 11, 2019 · 1 min read · Update at Aug 11, 2019</div>
+          <div class="sub header">@ baxiansheng · Aug 11, 2019 · 1 min read · Update at Aug 11, 2019</div>
         </h1>
       </header>
       <article class="markdown-body" style="margin-top: 2rem; font-size: 1.4rem;">
