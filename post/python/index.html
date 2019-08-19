@@ -1,69 +1,112 @@
 <!DOCTYPE html>
-<html lang="en-us">
-
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>
-Python
-</title>
+<meta charset="utf-8">
+<title>Python &#8211; Welcome to my blog</title>
+<meta name="description" content="">
 
-  
-  
-  <meta name="author" content="baxiansheng" />
-  <meta name="description" content="my personal python study note 1.爬取3D打印网论坛中的帖子  通过分析帖子的html页面的标签，使用python中的BeautifulSoup库进行爬取，并将爬取到的数据写入到mysql数据库中。
- 关于数据库的操作代码如下：
-db = pymysql.connect(&amp;quot;localhost&amp;quot;, &amp;quot;root&amp;quot;, &amp;quot;woaini&amp;quot;, &amp;quot;sdprint&amp;quot;, charset=&#39;utf8&#39;) //打开数据库连接 cursor = db.cursor() //使用cursor()方法获取操作游标 sql = &amp;quot;INSERT INTO sdprint(class,title, author,time, content)VALUES (%s,%s,%s, %s, %s);&amp;quot; //构造sql语句 params = (sdprint[&amp;quot;类别&amp;quot;],sdprint[&amp;quot;标题&amp;quot;], sdprint[&amp;quot;作者&amp;quot;],sdprint[&amp;quot;时间&amp;quot;], sdprint[&amp;quot;正文&amp;quot;]) //参数 try: cursor.execute(sql,params) //执行sql语句 db.commit() //提交 print(&#39;success&#39;) except: db.rollback() print(&#39;error&#39;) db.close() //关闭数据库连接  关于BS使用实例代码如下：
-f = open(filename, &#39;r&#39;) //把.html文件打开 html = f.read() f.close() bs = BeautifulSoup(html, &amp;quot;html.parser&amp;quot;) //bs实例化 div = bs.find(&amp;quot;div&amp;quot;,{&amp;quot;class&amp;quot;:&amp;quot;middle&amp;quot;}) //找到类别为middle的div，存储在div变量中  python字典类型知识，直接上代码" />
+    
 
 
 
 
+
+<meta name="twitter:title" content="Python">
+<meta name="twitter:description" content="">
+
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python">
+<meta property="og:description" content="">
+<meta property="og:url" content="https://baxiansheng.github.io/post/python/">
+<meta property="og:site_name" content="Welcome to my blog">
+
+
+
+  <meta property="og:updated_time" content="2019-08-11T19:06:11&#43;08:00"/>
+
+
+
+
+
+
+<link rel="canonical" href="https://baxiansheng.github.io/post/python/">
+
+
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link href="//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">
+
+<meta http-equiv="cleartype" content="on">
 
 <meta name="generator" content="Hugo 0.56.3" />
 
+<script src="/js/vendor/modernizr-2.6.2.custom.min.js"></script>
 
-<link rel="canonical" href="https://baxiansheng.github.io/post/python/" />
-<link rel="alternative" href="/index.xml" title="Welcome to my blog" type="application/atom+xml" />
 
-<link href="/css/semantic.min.css" rel="stylesheet" />
-<link rel="stylesheet" href="/css/site.css" />
-<link rel="stylesheet" href="/css/github-markdown.css" />
+<link rel="shortcut icon" href="/favicon.png">
 
 
 </head>
 
-<body>
-  <div class="flip-container">
-    <div class="flipper">
-      <section class="front">
-        
-<nav class="ui top secondary menu">
-  <div class="item">
-    <i class="inverted big link bullseye icon dream-flip-toggle" title="Flip it!"></i>
-  </div>
-  <div class="item">
-    <a href="/">
-      <i class="inverted big link home icon" title="Home"></i>
-    </a>
-  </div>
+<body id="post" >
+<nav id="dl-menu" class="dl-menuwrapper" role="navigation" style="display:inline-block">
+	<button class="dl-trigger">Open Menu</button>
+	<ul class="dl-menu">
+		<li><a href="/">Home</a></li>
+		<li>
+			<a href="#">About</a>
+			<ul class="dl-submenu">
+			
+			</ul>
+		</li>
+		<li>
+			<a href="#">Posts</a>
+			<ul class="dl-submenu">
+				<li><a href="/posts/">All Posts</a></li>
+				<li><a href="/tags/">All Tags</a></li>
+			</ul>
+		</li>
+		
+	    <li><a href="/theme-setup/" >Theme Setup</a></li>
+	  
+	    <li><a href="http://mademistakes.com" target="_blank">External Link</a></li>
+	  
+	</ul>
 </nav>
- 
-<div class="ui centered grid">
-  <div class="fifteen wide mobile fifteen wide tablet eleven wide computer column post-list post-single-main">
 
-    <section class="ui top attached segment">
-      <a class="ui black right corner label" href="javascript:void(0)" onclick="savePostAsImg()">
-        <i class="save icon"></i>
-      </a>
-      <header>
-        <h1 class="ui header">
-          Python
-          <div class="sub header">@ baxiansheng · Aug 11, 2019 · 1 min read · Update at Aug 11, 2019</div>
-        </h1>
-      </header>
-      <article class="markdown-body" style="margin-top: 2rem; font-size: 1.4rem;">
+ 
+
+<div id="main" role="main">
+  <article class="hentry">
+    <header class="header-title">
+      <div class="header-title-wrap">
+        
+          <h1 class="entry-title"><a href="/post/python/" rel="bookmark" title="Python">Python</a></h1>
+        
+         
+        <h2><span class="entry-date date published"><time datetime="2019-08-11 19:06:11 &#43;0800 CST">August 11, 2019</time></span></h2>
+        
+        
+      <p class="entry-reading-time">
+        <i class="fa fa-clock-o"></i>
+        Reading time ~1 minute
+    </p>
+    
+      </div>
+    </header>
+    <div class="entry-content">
+      
 
 <h2 id="my-personal-python-study-note">my personal python study note</h2>
 
@@ -113,173 +156,58 @@ print(content) // 打印一下字典
 </blockquote>
 
 <h3 id="2">2.</h3>
-</article>
-    </section>
 
-    <footer class="ui attached segment dream-tags">
-      
-      <span>No Tags</span>
-      
-    </footer>
-
-    
-
-    
-
-  </div>
-  <div class="fifteen wide mobile fifteen wide tablet four wide computer column">
-
-    
-<section class="ui top attached center aligned inverted segment">
-
-  <a id="tag-category-pop" class="ui right ribbon label" style="width: 1px;">
-    <i class="bars icon" title="Show menu"></i>
-  </a>
-
-  <div class="ui small circular image" style="margin-top: 1rem;">
-    
-    <img src="/img/avatar-ex.svg">
-    
-  </div>
-  
-  <h3 class="ui inverted header">
-  &#39;s blog<div class="sub header"></div>
-  </h3>
-
-  
-  <div class="ui inverted horizontal list">
-  
-    
-    <a class="item" href="/post">
-      <i class="archive icon" title="Archives"></i>
-    </a>
-    
-    <a class="item" href="/tags">
-      <i class="tags icon" title="All Tags"></i>
-    </a>
-    <a class="item" href="/categories">
-      <i class="cube icon" title="All Categories"></i>
-    </a>
-  </div>
-</section>
-
-
-
-<section class="ui attached center aligned inverted segment dream-header-tags dream-tags">
-
-  
-  <a class="ui label" href="/tags/tag1" title="tag1">tag1</a>
-  
-  <a class="ui label" href="/tags/tag2" title="tag2">tag2</a>
-  
-</section>
-
-
-
-
-<section class="ui attached inverted segment dream-categories">
-
-  
-  <div class="ui inverted accordion">
-  
-    
-    <div class="title">
-      <i class="dropdown icon"></i>
-      <a href="/categories/category1" class="item">category1</a>
-    </div>
-    <div class="content">
-      <div class="ui link list">
-      
-      <div class="item" style="padding-left: 24px;">
-        <i class="gem outline grey icon"></i>
-        <div class="content">
-          <a href="https://baxiansheng.github.io/post/my-dailylife-in-next-three-years/" class="item">My Plan in Next Three Years</a>
-        </div>
-      </div>
-      
-      </div>
-    </div>
-    
-  </div>
-</section>
-
-
-
-<section class="ui bottom attached center aligned inverted segment">
-
-    
-    <p>© 2019 Welcome to my blog</p>
-    
-    <p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with theme <a href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</p>
-</section>
-
-
-  </div>
+      <footer class="entry-meta">
+          
+        <span class="entry-tags"></span>
+        
+        
+        <div class="social-share">
+  <ul class="socialcount socialcount-small inline-list">
+    <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fbaxiansheng.github.io%2fpost%2fpython%2f" target="_blank" title="Share on Facebook"><span class="count"><i class="fa fa-facebook-square"></i> Like</span></a></li>
+    <li class="twitter"><a href="https://twitter.com/intent/tweet?text=https%3a%2f%2fbaxiansheng.github.io%2fpost%2fpython%2f" target="_blank" title="Share on Twitter"><span class="count"><i class="fa fa-twitter-square"></i> Tweet</span></a></li>
+    <li class="googleplus"><a href="https://plus.google.com/share?url=https%3a%2f%2fbaxiansheng.github.io%2fpost%2fpython%2f" target="_blank" title="Share on Google Plus"><span class="count"><i class="fa fa-google-plus-square"></i> +1</span></a></li>
+  </ul>
 </div>
 
-      </section>
-      <section class="back">
-        <nav class="ui top secondary menu" style="overflow-x: auto">
-  <div class="item">
-    <i class="inverted big link bullseye icon dream-flip-toggle" title="Flip it!"></i>
-  </div>
-  
-  
-  
-  
-  
-</nav>
+      </footer>
+    </div>
+    
+    <section id="disqus_thread"><div id="disqus_thread"></div>
+<script type="text/javascript">
 
-<div class="ui centered grid about">
-  <div class="fifteen wide mobile fifteen wide tablet fifteen wide computer column">
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
 
-    <section class="ui stacked segments">
-      
-      <header class="ui inverted segment">
-      
-        <h2 class="ui header">
-          About
-        </h2>
-      </header>
-
-      
-      <article class="ui inverted segment markdown-body">
-      
-        <div class="ui stackable three column grid">
-          <div class="column">
-              
-          </div>
-          <div class="column">
-              
-          </div>
-          <div class="column">
-              
-          </div>
-        </div>
-      </article>
-
-      
-
-      
-      
-    </section>
-
-  </div>
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = '';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+    
+  </article>
 </div>
 
-      </section>
-    </div>
-  </div>
+<div class="footer-wrapper">
+  <footer role="contentinfo">
+    <span> Powered by <a href="https://gohugo.io/" rel="nofollow">Hugo</a> using the <a href="https://github.com/dldx/hpstr-hugo-theme" rel="nofollow">HPSTR theme</a>.</span>
 
-  
-<script src="/js/jquery.min.js"></script>
-<script src="/js/semantic.min.js"></script>
-<script src="/js/html2canvas.min.js"></script>
-<script src="/js/bg.js"></script>
-<script src="/js/site.js"></script>
+  </footer>
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="\/js\/vendor\/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="/js/scripts.min.js"></script>
 
 
 
 </body>
-
 </html>
+
