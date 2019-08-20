@@ -5,21 +5,21 @@
     <meta charset="utf-8" />
     <meta name="generator" content="Hugo 0.56.3" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="author" content="John Doe" />
+    <meta name="author" content="Baxiansheng" />
     <meta name="description" content="" />
     <link rel="stylesheet" href="https://baxiansheng.github.io/css/main.min.f90f5edd436ec7b74ad05479a05705770306911f721193e7845948fb07fe1335.css" />
 
     
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="My Plan in Next Three Years"/>
-<meta name="twitter:description" content="本文用于记录本人于硕士研究生生涯中的点滴，争取做到每天都更新，内容包括学习，生活，以及自己的成长心路历程，给各位以前车之鉴，最重要的是，给，未来的自己。
-Start 2019年8月17日 于OUC 今天正式来到了学校，之前来过几次，不过都是当天就回家了，开始了今后的学习生活。今天天气不错，阳光明媚，是个出行的好日子。妈妈和弟弟一起送我来到学校，帮忙收拾了宿舍，我顺便带他们参观了实验室，我今后学习的地方！ 晚上继续学习了Java的基础知识，今天学的是JVM的运行原理，包括内存分配，垃圾回收GC，类文件和类加载器等知识。学习的过程中想着要把数据库原理这本书再复习一下，当时本科学习的时候由于时间关系没有学完，打算着重复习一下 sql语句格式和规范和后边的触发器等知识。现在是北京时间20:06，打算写完这点东西就会宿舍，毕竟今天是大家来到学校的第一天，回宿舍和舍友同学聊聊天，增进一下感情。
+<meta name="twitter:description" content="写在前面 本文用于记录本人于硕士研究生生涯中的点滴，争取做到每天都更新，内容包括学习，生活，以及自己的成长心路历程，给各位以前车之鉴，最重要的是，给，未来的自己。
+2019年8月17日 于OUC 今天正式来到了学校，之前来过几次，不过都是当天就回家了，开始了今后的学习生活。今天天气不错，阳光明媚，是个出行的好日子。妈妈和弟弟一起送我来到学校，帮忙收拾了宿舍，我顺便带他们参观了实验室，我今后学习的地方！ 晚上继续学习了Java的基础知识，今天学的是JVM的运行原理，包括内存分配，垃圾回收GC，类文件和类加载器等知识。学习的过程中想着要把数据库原理这本书再复习一下，当时本科学习的时候由于时间关系没有学完，打算着重复习一下 sql语句格式和规范和后边的触发器等知识。现在是北京时间20:06，打算写完这点东西就会宿舍，毕竟今天是大家来到学校的第一天，回宿舍和舍友同学聊聊天，增进一下感情。
 2019年8月18日 于OUC 今天是正式报到的日子，一大早报完到就来到实验室准备学习。上午看了看数据库触发器，下午学习了JVM基础知识，晚上把触发器实现了一下，这里放一下触发器的测试的sql语句
 use test; create table student (Sno char(9) primary KEY); INSERT INTO student values(&#39;201901001&#39;); alter table student add State int; drop trigger if exists Student_State; //创建触发器 DELIMITER ;; create trigger Student_State before insert on student for each row begin set NEW.State = 1 ; end ;; DELIMITER ; INSERT INTO student values(&#39;201901003&#39;,null); update student set State = 0 where Sno = &#39;201901001&#39;; insert into student values(&#39;201901004&#39;,null),(&#39;201901005&#39;,null); //测试对于for each row 是否能一次性对插入的多条数据使触发器起作用  白天的时候和同学聊了一下，以后的学习应该使用Spring框架比较多一些，所以今后的重心放在Spring的学习上，目前初步打算找几个实战项目跟着做一下，先加深一下理解，再慢慢的自己做几个项目。 不过近期应该还是会先把GitHub上的东西看完，尽快吧，赶紧看完，赶紧开始Spring的学习。趁着现在时间还算充裕！ 未来的路还很长，要学的东西还很多，加油。"/>
 
     <meta property="og:title" content="My Plan in Next Three Years" />
-<meta property="og:description" content="本文用于记录本人于硕士研究生生涯中的点滴，争取做到每天都更新，内容包括学习，生活，以及自己的成长心路历程，给各位以前车之鉴，最重要的是，给，未来的自己。
-Start 2019年8月17日 于OUC 今天正式来到了学校，之前来过几次，不过都是当天就回家了，开始了今后的学习生活。今天天气不错，阳光明媚，是个出行的好日子。妈妈和弟弟一起送我来到学校，帮忙收拾了宿舍，我顺便带他们参观了实验室，我今后学习的地方！ 晚上继续学习了Java的基础知识，今天学的是JVM的运行原理，包括内存分配，垃圾回收GC，类文件和类加载器等知识。学习的过程中想着要把数据库原理这本书再复习一下，当时本科学习的时候由于时间关系没有学完，打算着重复习一下 sql语句格式和规范和后边的触发器等知识。现在是北京时间20:06，打算写完这点东西就会宿舍，毕竟今天是大家来到学校的第一天，回宿舍和舍友同学聊聊天，增进一下感情。
+<meta property="og:description" content="写在前面 本文用于记录本人于硕士研究生生涯中的点滴，争取做到每天都更新，内容包括学习，生活，以及自己的成长心路历程，给各位以前车之鉴，最重要的是，给，未来的自己。
+2019年8月17日 于OUC 今天正式来到了学校，之前来过几次，不过都是当天就回家了，开始了今后的学习生活。今天天气不错，阳光明媚，是个出行的好日子。妈妈和弟弟一起送我来到学校，帮忙收拾了宿舍，我顺便带他们参观了实验室，我今后学习的地方！ 晚上继续学习了Java的基础知识，今天学的是JVM的运行原理，包括内存分配，垃圾回收GC，类文件和类加载器等知识。学习的过程中想着要把数据库原理这本书再复习一下，当时本科学习的时候由于时间关系没有学完，打算着重复习一下 sql语句格式和规范和后边的触发器等知识。现在是北京时间20:06，打算写完这点东西就会宿舍，毕竟今天是大家来到学校的第一天，回宿舍和舍友同学聊聊天，增进一下感情。
 2019年8月18日 于OUC 今天是正式报到的日子，一大早报完到就来到实验室准备学习。上午看了看数据库触发器，下午学习了JVM基础知识，晚上把触发器实现了一下，这里放一下触发器的测试的sql语句
 use test; create table student (Sno char(9) primary KEY); INSERT INTO student values(&#39;201901001&#39;); alter table student add State int; drop trigger if exists Student_State; //创建触发器 DELIMITER ;; create trigger Student_State before insert on student for each row begin set NEW.State = 1 ; end ;; DELIMITER ; INSERT INTO student values(&#39;201901003&#39;,null); update student set State = 0 where Sno = &#39;201901001&#39;; insert into student values(&#39;201901004&#39;,null),(&#39;201901005&#39;,null); //测试对于for each row 是否能一次性对插入的多条数据使触发器起作用  白天的时候和同学聊了一下，以后的学习应该使用Spring框架比较多一些，所以今后的重心放在Spring的学习上，目前初步打算找几个实战项目跟着做一下，先加深一下理解，再慢慢的自己做几个项目。 不过近期应该还是会先把GitHub上的东西看完，尽快吧，赶紧看完，赶紧开始Spring的学习。趁着现在时间还算充裕！ 未来的路还很长，要学的东西还很多，加油。" />
 <meta property="og:type" content="article" />
@@ -31,10 +31,20 @@ use test; create table student (Sno char(9) primary KEY); INSERT INTO student va
   </head>
   <body>
     <header class="app-header">
-      <a href="https://baxiansheng.github.io"><img class="app-header-avatar" src="/avatar.jpg" alt="John Doe" /></a>
+      <a href="https://baxiansheng.github.io/"><img class="app-header-avatar" src="/avatar.jpg" alt="Baxiansheng" /></a>
       <h1>Welcome to my blog</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula turpis sit amet elit pretium.</p>
+      <p>A personal blog for baxiansheng.</p>
       <div class="app-header-social">
+        
+          <a target="_blank" href="https://github.com/baxiansheng"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg></a>
+        
+          <a target="_blank" href="https://twitter.com/gohugoio"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-link">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+</svg></a>
         
       </div>
     </header>
@@ -67,9 +77,9 @@ use test; create table student (Sno char(9) primary KEY); INSERT INTO student va
     <div class="post-content">
       
 
-<p>本文用于记录本人于硕士研究生生涯中的点滴，争取做到每天都更新，内容包括学习，生活，以及自己的成长心路历程，给各位以前车之鉴，最重要的是，给，未来的自己。</p>
+<h2 id="写在前面">写在前面</h2>
 
-<h1 id="start">Start</h1>
+<p>本文用于记录本人于硕士研究生生涯中的点滴，争取做到每天都更新，内容包括学习，生活，以及自己的成长心路历程，给各位以前车之鉴，最重要的是，给，未来的自己。</p>
 
 <h3 id="2019年8月17日-于ouc">2019年8月17日 于OUC</h3>
 
@@ -109,6 +119,44 @@ insert into student values('201901004',null),('201901005',null);     //测试对
 <p>白天的时候和同学聊了一下，以后的学习应该使用Spring框架比较多一些，所以今后的重心放在Spring的学习上，目前初步打算找几个实战项目跟着做一下，先加深一下理解，再慢慢的自己做几个项目。
 不过近期应该还是会先把GitHub上的东西看完，尽快吧，赶紧看完，赶紧开始Spring的学习。趁着现在时间还算充裕！
 未来的路还很长，要学的东西还很多，加油。</p>
+
+<h3 id="2019年8月19日-于ouc">2019年8月19日 于OUC</h3>
+
+<p>今天上午举行了开学典礼，下午和导师聊了聊，关于以后的学习生活，研究方向等。根据导师对我们的要求，打算学习一下机器学习这方面的知识，明天抽空去网上搜索一下关于机器学习好的书买回来看一下
+导师还说要每周看篇paper，英文的，所以明天搜索了解一下好的paper网站。今天由于时间关系没怎么学习GitHub上的东西，明天补上！</p>
+
+<h3 id="2019年8月20日-于ouc">2019年8月20日 于OUC</h3>
+
+<p>今天上午参加了学院举行的开学教育，院长老师提到我们院和58同城有战略合作，就是选取10名研究生去58同城实习，为期1年，期间院里的导师作为主导师，58同城出一名副导师，进行联合培养。据说58同城的boss
+是我们学院的杰出校友。感觉这也是个机会，毕竟以后毕业还是要找工作，提前接触一下也是好事，不过暂时先看看情况，不着急。另外，今天辅导员提到想要入党的同学要提前写好入党申请书，因为考察的时间
+比较长，好像是半年后变成入党积极分子，再一年变成预备党员，所以写入党申请书的事情要提上日程了，截止到9月10号！
+今天下午看了看导师发的文章，找了找图书资源，论文资源，发现在学校的网站就有各大期刊的文献等，很全面，以后就从上边读paper了。
+晚上在b站找到了机器学习的视频公开课，是吴恩达老师讲的，听了几节感觉还不错，吴老师全程用英语讲课，还可以顺便锻炼一下英语听力，以后要坚持下去每天看！
+下边放一下今天看的收获</p>
+
+<p>machine learning 的例子
+&lt;-Database mining
+-Applications can&rsquo;t program by hand.
+-Self-customizing programs</p>
+
+<p>机器学习的定义
+&lt;&ldquo;A computer program is said to learn from experience E with respect to som task T and some performance measures P, if its performance on T, as measured by P, improves with experience E.&rdquo;</p>
+
+<p>机器学习的算法
+&lt;-Supervised learning
+-Unsupervised learning
+-Others: Reinforcement learning, recommender systems.</p>
+
+<p>对于监督学习
+&lt;-Classification problem(分类问题)-预测离散值
+-Regression problem(回归问题)-预测连续值</p>
+
+<p>对于非监督学习
+&lt;-聚类算法
+-鸡尾酒胡算法:
+[W,s,v]=svd((repmat(sum(x.*x,1),size(x,1),1).*x)*x&rsquo;);</p>
+
+<p>剩下的明天继续整理 ，争取把关于机器学习的知识抽离出来到另一篇博客里更新。</p>
 
     </div>
     <div class="post-footer">
