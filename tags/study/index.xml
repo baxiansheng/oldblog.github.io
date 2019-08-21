@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Welcome to my blog</title>
-    <link>https://baxiansheng.github.io/</link>
-    <description>Recent content on Welcome to my blog</description>
+    <title>study on Welcome to my blog</title>
+    <link>https://baxiansheng.github.io/tags/study/</link>
+    <description>Recent content in study on Welcome to my blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 21 Aug 2019 20:51:22 +0800</lastBuildDate>
     
-	<atom:link href="https://baxiansheng.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://baxiansheng.github.io/tags/study/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -47,16 +47,6 @@ use test; create table student (Sno char(9) primary KEY); INSERT INTO student va
  关于数据库的操作代码如下：
 db = pymysql.connect(&amp;quot;localhost&amp;quot;, &amp;quot;root&amp;quot;, &amp;quot;woaini&amp;quot;, &amp;quot;sdprint&amp;quot;, charset=&#39;utf8&#39;) //打开数据库连接 cursor = db.cursor() //使用cursor()方法获取操作游标 sql = &amp;quot;INSERT INTO sdprint(class,title, author,time, content)VALUES (%s,%s,%s, %s, %s);&amp;quot; //构造sql语句 params = (sdprint[&amp;quot;类别&amp;quot;],sdprint[&amp;quot;标题&amp;quot;], sdprint[&amp;quot;作者&amp;quot;],sdprint[&amp;quot;时间&amp;quot;], sdprint[&amp;quot;正文&amp;quot;]) //参数 try: cursor.execute(sql,params) //执行sql语句 db.commit() //提交 print(&#39;success&#39;) except: db.rollback() print(&#39;error&#39;) db.close() //关闭数据库连接  关于BS使用实例代码如下：
 f = open(filename, &#39;r&#39;) //把.html文件打开 html = f.read() f.close() bs = BeautifulSoup(html, &amp;quot;html.parser&amp;quot;) //bs实例化 div = bs.find(&amp;quot;div&amp;quot;,{&amp;quot;class&amp;quot;:&amp;quot;middle&amp;quot;}) //找到类别为middle的div，存储在div变量中  python字典类型知识，直接上代码</description>
-    </item>
-    
-    <item>
-      <title>Blog</title>
-      <link>https://baxiansheng.github.io/post/blog/</link>
-      <pubDate>Sun, 11 Aug 2019 18:04:29 +0800</pubDate>
-      
-      <guid>https://baxiansheng.github.io/post/blog/</guid>
-      <description>hello-world The first GitHub repository of baxiansheng. I am learning to use this fantistic website to improve my coding skills, and I believe that I will try my best to do this.
-python study note： 1.</description>
     </item>
     
   </channel>

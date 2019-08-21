@@ -6,10 +6,24 @@
     <description>Recent content in Posts on Welcome to my blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 17 Aug 2019 19:52:42 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 21 Aug 2019 20:51:22 +0800</lastBuildDate>
     
 	<atom:link href="https://baxiansheng.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Machine Learning</title>
+      <link>https://baxiansheng.github.io/post/machine-learning/</link>
+      <pubDate>Wed, 21 Aug 2019 20:51:22 +0800</pubDate>
+      
+      <guid>https://baxiansheng.github.io/post/machine-learning/</guid>
+      <description>机器学习基础 machine learning 的例子 &amp;gt;-Database mining -Applications can&amp;rsquo;t program by hand. -Self-customizing programs
+机器学习的定义 &amp;gt;&amp;ldquo;A computer program is said to learn from experience E with respect to som task T and some performance measures P, if its performance on T, as measured by P, improves with experience E.&amp;rdquo;
+机器学习的算法 &amp;gt;-Supervised learning -Unsupervised learning -Others: Reinforcement learning, recommender systems.
+对于监督学习 &amp;gt;-Classification problem(分类问题)-预测离散值 -Regression problem(回归问题)-预测连续值
+对于非监督学习 &amp;gt;-聚类算法 -鸡尾酒胡算法: [W,s,v]=svd((repmat(sum(x.*x,1),size(x,1),1).*x)*x&amp;rsquo;);
+在这个监督学习中的回归问题中，有几个基本的概念，如假设函数h(x)(hypothesis),代价函数J(θ)(cost function)等，注意到假设函数是关于x的一个函数，代价函数是关于θ的一个函数。</description>
+    </item>
     
     <item>
       <title>My Plan in Next Three Years</title>
@@ -43,25 +57,6 @@ f = open(filename, &#39;r&#39;) //把.html文件打开 html = f.read() f.close()
       <guid>https://baxiansheng.github.io/post/blog/</guid>
       <description>hello-world The first GitHub repository of baxiansheng. I am learning to use this fantistic website to improve my coding skills, and I believe that I will try my best to do this.
 python study note： 1.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://baxiansheng.github.io/post/blog2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://baxiansheng.github.io/post/blog2/</guid>
-      <description>本项目内容为 《Spring Boot实战合集》系列文章，代码已开源，并持续保持更新。如您觉得该项目对您有用，欢迎点击右上方的 Star 按钮，给予支持！！  个人博客：https://www.codesheep.cn GitHub：https://github.com/hansonwang99  另外所有内容都在我的个人微信公众号 CodeSheep 最先推出，大家可以关注一下，可 长按 或 扫描 下面的 小心心 来获取更多 务实、能看懂、可复现的 原创文。除此之外 提问/进群交流 也可以扫码进行！！！
-  
-数据库/缓存相关  Guava Cache本地缓存在 Spring Boot应用中的实践
- EVCache缓存在 Spring Boot中的实战
- Spring Boot应用缓存实践之：Ehcache加持
- Spring Boot集成 MyBatis和 SQL Server实践
- Elasticsearch搜索引擎在Spring Boot中的实践
- 自制一个 elasticsearch-spring-boot-starter
- Spring Boot项目利用MyBatis Generator进行数据层代码自动生成
- Mybatis-Plus 真好用（乡村爱情加持）
-  日志相关  Spring Boot日志框架实践  应用监控相关  利用神器 BTrace 追踪线上 Spring Boot应用运行时信息</description>
     </item>
     
   </channel>
