@@ -17,11 +17,14 @@
       <pubDate>Wed, 21 Aug 2019 20:51:22 +0800</pubDate>
       
       <guid>https://baxiansheng.github.io/post/machine-learning/</guid>
-      <description>机器学习基础 machine learning 的例子 &amp;gt; -Database mining -Applications can&amp;rsquo;t program by hand. -Self-customizing programs
-机器学习的定义 &amp;gt; &amp;ldquo;A computer program is said to learn from experience E with respect to som task T and some performance measures P, if its performance on T, as measured by P, improves with experience E.&amp;rdquo;
-机器学习的算法 &amp;gt; -Supervised learning -Unsupervised learning -Others: Reinforcement learning, recommender systems.
-对于监督学习 &amp;gt; -Classification problem(分类问题)-预测离散值 -Regression problem(回归问题)-预测连续值
-对于非监督学习 &amp;gt; -聚类算法 -鸡尾酒胡算法: [W,s,v]=svd((repmat(sum(x.</description>
+      <description>机器学习基础 machine learning 的例子 &amp;gt; -Database mining
+-Applications can&amp;rsquo;t program by hand. -Self-customizing programs
+机器学习的定义
+ &amp;ldquo;A computer program is said to learn from experience E with respect to som task T and some performance measures P, if its performance on T, as measured by P, improves with experience E.&amp;rdquo;
+ 机器学习的算法
+ -Supervised learning -Unsupervised learning -Others: Reinforcement learning, recommender systems.
+ 对于监督学习
+ -Classification problem(分类问题)-预测离散值 -Regression problem(回归问题)-预测连续值</description>
     </item>
     
     <item>
