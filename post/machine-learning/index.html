@@ -12,20 +12,18 @@
     
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Machine Learning"/>
-<meta name="twitter:description" content="机器学习基础 machine learning 的例子 &gt;-Database mining -Applications can&rsquo;t program by hand. -Self-customizing programs
-机器学习的定义 &gt;&ldquo;A computer program is said to learn from experience E with respect to som task T and some performance measures P, if its performance on T, as measured by P, improves with experience E.&rdquo;
-机器学习的算法 &gt;-Supervised learning -Unsupervised learning -Others: Reinforcement learning, recommender systems.
-对于监督学习 &gt;-Classification problem(分类问题)-预测离散值 -Regression problem(回归问题)-预测连续值
-对于非监督学习 &gt;-聚类算法 -鸡尾酒胡算法: [W,s,v]=svd((repmat(sum(x.*x,1),size(x,1),1).*x)*x&rsquo;);
-在这个监督学习中的回归问题中，有几个基本的概念，如假设函数h(x)(hypothesis),代价函数J(θ)(cost function)等，注意到假设函数是关于x的一个函数，代价函数是关于θ的一个函数。"/>
+<meta name="twitter:description" content="机器学习基础 machine learning 的例子 &gt; -Database mining -Applications can&rsquo;t program by hand. -Self-customizing programs
+机器学习的定义 &gt; &ldquo;A computer program is said to learn from experience E with respect to som task T and some performance measures P, if its performance on T, as measured by P, improves with experience E.&rdquo;
+机器学习的算法 &gt; -Supervised learning -Unsupervised learning -Others: Reinforcement learning, recommender systems.
+对于监督学习 &gt; -Classification problem(分类问题)-预测离散值 -Regression problem(回归问题)-预测连续值
+对于非监督学习 &gt; -聚类算法 -鸡尾酒胡算法: [W,s,v]=svd((repmat(sum(x."/>
 
     <meta property="og:title" content="Machine Learning" />
-<meta property="og:description" content="机器学习基础 machine learning 的例子 &gt;-Database mining -Applications can&rsquo;t program by hand. -Self-customizing programs
-机器学习的定义 &gt;&ldquo;A computer program is said to learn from experience E with respect to som task T and some performance measures P, if its performance on T, as measured by P, improves with experience E.&rdquo;
-机器学习的算法 &gt;-Supervised learning -Unsupervised learning -Others: Reinforcement learning, recommender systems.
-对于监督学习 &gt;-Classification problem(分类问题)-预测离散值 -Regression problem(回归问题)-预测连续值
-对于非监督学习 &gt;-聚类算法 -鸡尾酒胡算法: [W,s,v]=svd((repmat(sum(x.*x,1),size(x,1),1).*x)*x&rsquo;);
-在这个监督学习中的回归问题中，有几个基本的概念，如假设函数h(x)(hypothesis),代价函数J(θ)(cost function)等，注意到假设函数是关于x的一个函数，代价函数是关于θ的一个函数。" />
+<meta property="og:description" content="机器学习基础 machine learning 的例子 &gt; -Database mining -Applications can&rsquo;t program by hand. -Self-customizing programs
+机器学习的定义 &gt; &ldquo;A computer program is said to learn from experience E with respect to som task T and some performance measures P, if its performance on T, as measured by P, improves with experience E.&rdquo;
+机器学习的算法 &gt; -Supervised learning -Unsupervised learning -Others: Reinforcement learning, recommender systems.
+对于监督学习 &gt; -Classification problem(分类问题)-预测离散值 -Regression problem(回归问题)-预测连续值
+对于非监督学习 &gt; -聚类算法 -鸡尾酒胡算法: [W,s,v]=svd((repmat(sum(x." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://baxiansheng.github.io/post/machine-learning/" />
 <meta property="article:published_time" content="2019-08-21T20:51:22+08:00" />
@@ -84,24 +82,24 @@
 <h2 id="机器学习基础">机器学习基础</h2>
 
 <p>machine learning 的例子
-&gt;-Database mining
+&gt; -Database mining
 -Applications can&rsquo;t program by hand.
 -Self-customizing programs</p>
 
 <p>机器学习的定义
-&gt;&ldquo;A computer program is said to learn from experience E with respect to som task T and some performance measures P, if its performance on T, as measured by P, improves with experience E.&rdquo;</p>
+&gt; &ldquo;A computer program is said to learn from experience E with respect to som task T and some performance measures P, if its performance on T, as measured by P, improves with experience E.&rdquo;</p>
 
 <p>机器学习的算法
-&gt;-Supervised learning
+&gt; -Supervised learning
 -Unsupervised learning
 -Others: Reinforcement learning, recommender systems.</p>
 
 <p>对于监督学习
-&gt;-Classification problem(分类问题)-预测离散值
+&gt; -Classification problem(分类问题)-预测离散值
 -Regression problem(回归问题)-预测连续值</p>
 
 <p>对于非监督学习
-&gt;-聚类算法
+&gt; -聚类算法
 -鸡尾酒胡算法:
 [W,s,v]=svd((repmat(sum(x.*x,1),size(x,1),1).*x)*x&rsquo;);</p>
 
@@ -119,7 +117,7 @@
 <h3 id="那么矩阵运算的作用-把大量的运算打包到一次矩阵运算中去">那么矩阵运算的作用！ 把大量的运算打包到一次矩阵运算中去！！</h3>
 
 <p>使用梯度下降算法的小技巧
-&gt;1.特征缩放  Feature scaling
+&gt; 1.特征缩放  Feature scaling
 对于特征值的区间相差很大的，其代价函数画出的图会很狭长(对于两个特征值，其图是狭长的椭圆)，这样找到的最优值的路径十分曲折，耗时。可以把特征值区间降到0到1(特征缩放)，
 这样画出来的图比较圆滑，找的路径也比较快捷，梯度下降算法也能更快的收敛。
 2.归一化  Mean normalization
@@ -130,6 +128,44 @@
 太大，则随着迭代次数的增加，J(θ)可能不会下降(波动或上升)，并且有可能不会收敛(may not convergence)</p>
 
 <p>那么如何选择合适的学习率？</p>
+
+<h4 id="标准方程法-normal-equation">标准方程法(Normal equation)</h4>
+
+<p>这里先给出定义：</p>
+
+<p>设计矩阵(design matrix): X    和   向量Y</p>
+
+<p>那么 套用θ=pinv(x&rsquo;*x)*x&rsquo;*y公式，即可求得合适的参数θ，使得代价函数最小。</p>
+
+<h5 id="问题来了-我们知道pinv和inv操作是求矩阵的逆-如果所求矩阵不可逆怎么办">问题来了，我们知道pinv和inv操作是求矩阵的逆，如果所求矩阵不可逆怎么办？</h5>
+
+<blockquote>
+<p>出现这种问题有两个原因：
+1.所选的feature之间有线性关系，比如x1和x2都是代表房子的面积，只不过x1的单位是平方英尺，x2的单位是平方米，我们知道1米=3.28英尺
+2.选的feature太多了
+实际上，所求的矩阵不可逆的情况很少出现，所以基本不用担心！</p>
+</blockquote>
+
+<h4 id="octave基本语法">octave基本语法！</h4>
+
+<blockquote>
+<p>% 注释
+== 等于
+~= 不等于
+&amp;&amp; 逻辑与
+|| 逻辑或
+PS1(&lsquo;&gt;&gt; &lsquo;);   简化命令行
+；  可以抑制输出  比如 a=3 和a=3;  前者会在屏幕打印a=3，后者不会打印
+disp(a) 或者直接打a  可以打印出a的信息
+A=[1 2;3 4;5 6]    %定义一个3*2的矩阵A
+v=1:0.1:2  定义一个从1开始 ，每列元素增加0.1，只到增加到2的行向量
+v=1:6   即v=[1 2 3 4 5 6]
+ones(1,3)和zeros(1,3) 生成矩阵
+rand(1,3) 随机生成矩阵
+hist(w)  绘制直方图
+eye(4)  生成4阶单位矩阵
+help eye 显示帮助信息 按q退出</p>
+</blockquote>
 
     </div>
     <div class="post-footer">
