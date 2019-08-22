@@ -2,13 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Welcome to my blog</title>
-    <link>uildDrafts/tags/</link>
+    <link>https://baxiansheng.github.io/tags/</link>
     <description>Recent content in Tags on Welcome to my blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Sun, 11 Aug 2019 19:06:11 +0800</lastBuildDate>
     
-	<atom:link href="uildDrafts/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://baxiansheng.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>study</title>
+      <link>https://baxiansheng.github.io/tags/study/</link>
+      <pubDate>Sun, 11 Aug 2019 19:06:11 +0800</pubDate>
+      
+      <guid>https://baxiansheng.github.io/tags/study/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

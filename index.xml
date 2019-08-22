@@ -2,13 +2,73 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Welcome to my blog</title>
-    <link>uildDrafts/</link>
+    <link>https://baxiansheng.github.io/</link>
     <description>Recent content on Welcome to my blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Thu, 22 Aug 2019 17:34:35 +0800</lastBuildDate>
     
-	<atom:link href="uildDrafts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://baxiansheng.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Test</title>
+      <link>https://baxiansheng.github.io/post/test/</link>
+      <pubDate>Thu, 22 Aug 2019 17:34:35 +0800</pubDate>
+      
+      <guid>https://baxiansheng.github.io/post/test/</guid>
+      <description>测试！！！！！！！ 滴滴滴</description>
+    </item>
+    
+    <item>
+      <title>My Daily Life</title>
+      <link>https://baxiansheng.github.io/post/my-daily-life/</link>
+      <pubDate>Thu, 22 Aug 2019 17:25:31 +0800</pubDate>
+      
+      <guid>https://baxiansheng.github.io/post/my-daily-life/</guid>
+      <description>写在前面 本文用于记录本人于硕士研究生生涯中的点滴，争取做到每天都更新，内容包括学习，生活，以及自己的成长心路历程，给各位以前车之鉴，最重要的是，给，未来的自己。
+2019年8月17日 于OUC 今天正式来到了学校，之前来过几次，不过都是当天就回家了，开始了今后的学习生活。今天天气不错，阳光明媚，是个出行的好日子。妈妈和弟弟一起送我来到学校，帮忙收拾了宿舍，我顺便带他们参观了实验室，我今后学习的地方！ 晚上继续学习了Java的基础知识，今天学的是JVM的运行原理，包括内存分配，垃圾回收GC，类文件和类加载器等知识。学习的过程中想着要把数据库原理这本书再复习一下，当时本科学习的时候由于时间关系没有学完，打算着重复习一下 sql语句格式和规范和后边的触发器等知识。现在是北京时间20:06，打算写完这点东西就会宿舍，毕竟今天是大家来到学校的第一天，回宿舍和舍友同学聊聊天，增进一下感情。
+2019年8月18日 于OUC 今天是正式报到的日子，一大早报完到就来到实验室准备学习。上午看了看数据库触发器，下午学习了JVM基础知识，晚上把触发器实现了一下，这里放一下触发器的测试的sql语句
+use test; create table student (Sno char(9) primary KEY); INSERT INTO student values(&#39;201901001&#39;); alter table student add State int; drop trigger if exists Student_State; //创建触发器 DELIMITER ;; create trigger Student_State before insert on student for each row begin set NEW.State = 1 ; end ;; DELIMITER ; INSERT INTO student values(&#39;201901003&#39;,null); update student set State = 0 where Sno = &#39;201901001&#39;; insert into student values(&#39;201901004&#39;,null),(&#39;201901005&#39;,null); //测试对于for each row 是否能一次性对插入的多条数据使触发器起作用  白天的时候和同学聊了一下，以后的学习应该使用Spring框架比较多一些，所以今后的重心放在Spring的学习上，目前初步打算找几个实战项目跟着做一下，先加深一下理解，再慢慢的自己做几个项目。 不过近期应该还是会先把GitHub上的东西看完，尽快吧，赶紧看完，赶紧开始Spring的学习。趁着现在时间还算充裕！ 未来的路还很长，要学的东西还很多，加油。</description>
+    </item>
+    
+    <item>
+      <title>Machine Learning</title>
+      <link>https://baxiansheng.github.io/post/machine-learning/</link>
+      <pubDate>Thu, 22 Aug 2019 17:24:08 +0800</pubDate>
+      
+      <guid>https://baxiansheng.github.io/post/machine-learning/</guid>
+      <description>机器学习基础 machine learning 的例子 &amp;gt; -Database mining
+-Applications can&amp;rsquo;t program by hand. -Self-customizing programs
+机器学习的定义
+ &amp;ldquo;A computer program is said to learn from experience E with respect to som task T and some performance measures P, if its performance on T, as measured by P, improves with experience E.&amp;rdquo;
+ 机器学习的算法
+ -Supervised learning -Unsupervised learning -Others: Reinforcement learning, recommender systems.
+ 对于监督学习
+ -Classification problem(分类问题)-预测离散值 -Regression problem(回归问题)-预测连续值</description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://baxiansheng.github.io/post/python/</link>
+      <pubDate>Sun, 11 Aug 2019 19:06:11 +0800</pubDate>
+      
+      <guid>https://baxiansheng.github.io/post/python/</guid>
+      <description>my personal python study note 1.爬取3D打印网论坛中的帖子  通过分析帖子的html页面的标签，使用python中的BeautifulSoup库进行爬取，并将爬取到的数据写入到mysql数据库中。
+ 关于数据库的操作代码如下：
+db = pymysql.connect(&amp;quot;localhost&amp;quot;, &amp;quot;root&amp;quot;, &amp;quot;woaini&amp;quot;, &amp;quot;sdprint&amp;quot;, charset=&#39;utf8&#39;) //打开数据库连接 cursor = db.cursor() //使用cursor()方法获取操作游标 sql = &amp;quot;INSERT INTO sdprint(class,title, author,time, content)VALUES (%s,%s,%s, %s, %s);&amp;quot; //构造sql语句 params = (sdprint[&amp;quot;类别&amp;quot;],sdprint[&amp;quot;标题&amp;quot;], sdprint[&amp;quot;作者&amp;quot;],sdprint[&amp;quot;时间&amp;quot;], sdprint[&amp;quot;正文&amp;quot;]) //参数 try: cursor.execute(sql,params) //执行sql语句 db.commit() //提交 print(&#39;success&#39;) except: db.rollback() print(&#39;error&#39;) db.close() //关闭数据库连接  关于BS使用实例代码如下：
+f = open(filename, &#39;r&#39;) //把.html文件打开 html = f.read() f.close() bs = BeautifulSoup(html, &amp;quot;html.parser&amp;quot;) //bs实例化 div = bs.find(&amp;quot;div&amp;quot;,{&amp;quot;class&amp;quot;:&amp;quot;middle&amp;quot;}) //找到类别为middle的div，存储在div变量中  python字典类型知识，直接上代码</description>
+    </item>
+    
+    <item>
+      <title>Blog</title>
+      <link>https://baxiansheng.github.io/post/blog/</link>
+      <pubDate>Sun, 11 Aug 2019 18:04:29 +0800</pubDate>
+      
+      <guid>https://baxiansheng.github.io/post/blog/</guid>
+      <description>hello-world The first GitHub repository of baxiansheng. I am learning to use this fantistic website to improve my coding skills, and I believe that I will try my best to do this.
+python study note： 1.</description>
+    </item>
     
   </channel>
 </rss>
