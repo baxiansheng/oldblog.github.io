@@ -3,51 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://baxiansheng.github.io/post/my-daily-life/</loc>
-    <lastmod>2019-08-22T17:25:31+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://baxiansheng.github.io/post/</loc>
-    <lastmod>2019-08-22T17:25:31+08:00</lastmod>
+    <loc>http://example.org/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://baxiansheng.github.io/</loc>
-    <lastmod>2019-08-22T17:25:31+08:00</lastmod>
+    <loc>http://example.org/tags/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://baxiansheng.github.io/post/machine-learning/</loc>
-    <lastmod>2019-08-22T17:24:08+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://baxiansheng.github.io/post/python/</loc>
-    <lastmod>2019-08-11T19:06:11+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://baxiansheng.github.io/tags/</loc>
-    <lastmod>2019-08-11T19:06:11+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://baxiansheng.github.io/tags/study/</loc>
-    <lastmod>2019-08-11T19:06:11+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://baxiansheng.github.io/post/blog/</loc>
-    <lastmod>2019-08-11T18:04:29+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://baxiansheng.github.io/categories/</loc>
+    <loc>http://example.org/</loc>
     <priority>0</priority>
   </url>
   
